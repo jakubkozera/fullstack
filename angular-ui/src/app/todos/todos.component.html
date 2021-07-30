@@ -1,0 +1,14 @@
+<div>
+  <h1>Anuglar Todos:</h1>
+  <div>
+    <div *ngFor="let todo of todos">
+      {{todo.description}}
+      </div>
+
+  </div>
+  <h1>New:</h1>
+  <input type="text" [(ngModel)]="newTodo" />
+  <button (click)="handleClick()" >Add</button>
+
+</div>
+
